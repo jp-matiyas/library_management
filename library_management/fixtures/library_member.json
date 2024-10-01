@@ -1,0 +1,62 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Library Member",
+  "email_address": "jay@gmail.com",
+  "first_name": "Jaykumards",
+  "full_name": "Jaykumards M Patel",
+  "last_name": "Patel",
+  "middle_name": "M",
+  "modified": "2024-09-06 16:58:19.579867",
+  "name": "LM00004",
+  "phone": "9033296796"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Library Member",
+  "email_address": "jjj@gmail.com",
+  "first_name": "jjj",
+  "full_name": "jjj mmm ppp",
+  "last_name": "ppp",
+  "middle_name": "mmm",
+  "modified": "2024-09-06 17:24:05.483785",
+  "name": "LM00005",
+  "phone": "7623721387"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Library Member",
+  "email_address": "tushar@gmail.com",
+  "first_name": "Tushar",
+  "full_name": "Tushar J Makwana",
+  "last_name": "Makwana",
+  "middle_name": "J",
+  "modified": "2024-09-06 10:51:37.012856",
+  "name": "LM00003",
+  "phone": "12345667234"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Library Member",
+  "email_address": "jay@gmail.com",
+  "first_name": "Jaykumar",
+  "full_name": null,
+  "last_name": "Patel",
+  "middle_name": null,
+  "modified": "2024-09-05 18:17:24.441325",
+  "name": "LM00001",
+  "phone": "1234567890"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Library Member",
+  "email_address": "abc@gmail.com",
+  "first_name": "abc",
+  "full_name": "abc efg",
+  "last_name": "efg",
+  "middle_name": null,
+  "modified": "2024-09-06 10:34:57.579756",
+  "name": "LM00002",
+  "phone": "1423567824"
+ }
+]
