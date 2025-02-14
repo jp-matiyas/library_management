@@ -7,6 +7,8 @@ from frappe.model.docstatus import DocStatus
 
 class LibraryMembership(Document):
     def before_submit(self):
+        # if self.from_date > self.to_date:
+        #     frappe.throw("to date should greater.")
         exists = frappe.db.exists(
             "Library Membership",
             {

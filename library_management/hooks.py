@@ -43,7 +43,12 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+    "Project" : "public/js/project.js",
+    "Sales Order" : "public/js/sales_order.js",
+    "Sales Invoice" : "public/js/invoice.js",
+    "Customer" : "public/js/customer.js"
+    }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -129,21 +134,31 @@ app_license = "mit"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	# "ToDo": "custom_app.overrides.CustomToDo"
+    "Employee": "library_management.overrides.employee.Customemployee"
+}
 
 # Document Events
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	# "*": {
+	# 	"on_update": "method",
+	# 	"on_cancel": "method",
+	# 	"on_trash": "method"
+	# }
+    # "Employee": {
+    #     "before_save": "library_management.library_management.doc_event.employee.validate_department"
+    # },
+    "Sales Invoice": {
+        "validate": "library_management.library_management.doc_event.sales_invoice.invoice_count"
+    },
+    "Purchase Invoice": {
+        "validate": "library_management.library_management.doc_event.purchase_invoice.validate_total_amount"
+    }
+}
 
 # Scheduled Tasks
 # ---------------
@@ -243,5 +258,10 @@ app_license = "mit"
 # }
 
 fixtures = [
-    "Library Member"
-]
+    {"dt": "Custom Field", "filters": [
+        [
+            "name", "in", [
+                "Customer-custom_email_id"
+            ]
+        ]]}
+        ]
